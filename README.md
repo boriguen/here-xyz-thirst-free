@@ -24,3 +24,5 @@ Here is the response:
   }
 ]
 ```
+
+And for more ways to query the data, please have a look the [XYZ Swagger documentation](https://xyz.api.here.com/hub/static/swagger).
