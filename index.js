@@ -4,14 +4,14 @@ var APP_CODE = 'ZlMdV3eLHiRll-8HO3MayA';
 var SELECTED_POINT_STYLE = [{
             zIndex: 3,
             type: "Circle",
-            radius: 9,
+            radius: 10,
             fill: "blue"
           }, {
             zIndex: 4,
             type: "Image",
             src: "img/drop.png",
-            width: 24,
-            height: 24
+            width: 16,
+            height: 16
           }];
 
 kickoff();
@@ -56,7 +56,7 @@ function kickoff() {
       max: 20,
       provider: new here.xyz.maps.providers.ImageProvider({
         name: 'Live Map',
-        url: 'http://{SUBDOMAIN_INT_1_4}.mapcreator.tilehub.api.here.com/tilehub/wv_livemap_bc/png/terrain/512/{QUADKEY}?access_token=' + YOUR_ACCESS_TOKEN
+        url: 'https://{SUBDOMAIN_INT_1_4}.mapcreator.tilehub.api.here.com/tilehub/wv_livemap_bc/png/terrain/512/{QUADKEY}?access_token=' + YOUR_ACCESS_TOKEN
       })
     })
   ];
@@ -157,14 +157,14 @@ function kickoff() {
           pointStyle: [{
             zIndex: 3,
             type: "Circle",
-            radius: 7,
+            radius: 8,
             fill: "cyan"
           },{
             zIndex: 4,
             type: "Image",
             src: "img/drop.png",
-            width: 24,
-            height: 24
+            width: 16,
+            height: 16
           }]
         },
         assign: function(feature, zoomlevel) {
@@ -221,13 +221,8 @@ function kickoff() {
             zIndex: 4,
             type: "Image",
             src: "img/here-logo.png",
-            width: 24,
-            height: 24
-          }, {
-            zIndex: 3,
-            type: "Circle",
-            radius: 5,
-            fill: "green"
+            width: 48,
+            height: 48
           }]
         },
         assign: function(feature, zoomlevel) {
