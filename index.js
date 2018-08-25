@@ -1,4 +1,4 @@
-var YOUR_ACCESS_TOKEN = '9w5K6Ym8VwBUu0JaVQeufA';
+var YOUR_ACCESS_TOKEN = '8JhorI7kaJtIx0UCEGlbow';
 var APP_ID = 'xjmyiygJapVIgnffuM6w';
 var APP_CODE = 'ZlMdV3eLHiRll-8HO3MayA';
 var SELECTED_POINT_STYLE = [{
