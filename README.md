@@ -1,6 +1,13 @@
 # here-xyz-thirst-free
 Thirst Free is a simple web app allowing to visualize the public water fountains in the USA and calculate routes from the user current location to the chosen fountain. It leverages [HERE XYZ](https://xyz.here.com) features.
 
+# Features
+1. Accept to share your location to have the app work
+2. Check out the public water fountains colored in cyan
+3. Select a specific water fountain that become colored in blue
+4. Track your progress to the selected water fountain thanks to the calculated yellow pedestrian route
+5. Be aware of how much time and distance is left to the water fountain by zooming in on the route and reading the label
+
 # Background on the underlying data
 Used XYZ spaces can be seen via:
 ```
