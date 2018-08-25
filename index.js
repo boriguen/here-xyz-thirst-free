@@ -87,7 +87,7 @@ function kickoff() {
   function onWatchPositionSuccess(position) {
     console.log('Position got updated: ' + [position.coords.longitude, position.coords.latitude].join(', '));
     if (!display) {
-      intialize(position.coords.longitude, position.coords.latitude);
+      initialize(position.coords.longitude, position.coords.latitude);
     }
     updateCurrentPositionFeature(position);
     if (currentFountainFeature) {
@@ -113,7 +113,7 @@ function kickoff() {
     infoTag.innerText = "Please share your location or resolve the problem as we can't move forward currently: " + error;
   }
 
-  function intialize(longitude, latitude) {
+  function initialize(longitude, latitude) {
     display = getDisplay(longitude, latitude);
     waterFountainsLayer = getWaterFountainsLayer();
     display.addLayer(waterFountainsLayer);
