@@ -7,6 +7,7 @@ Thirst Free is a simple web app allowing to visualize the public water fountains
 3. Select a specific water fountain that become colored in blue
 4. Track your progress to the selected water fountain thanks to the calculated yellow pedestrian route
 5. Be aware of how much time and distance is left to the water fountain by zooming in on the route and reading the label
+6. Observe the route getting updated as you walk towards the selected water fountain
 
 # Background on the underlying data
 Used XYZ spaces can be seen via:
