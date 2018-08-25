@@ -1,6 +1,8 @@
 # here-xyz-thirst-free
 Thirst Free is a simple web app allowing to visualize the public water fountains in the USA and calculate routes from the user current location to the chosen fountain. It leverages [HERE XYZ](https://xyz.here.com) features.
 
+Check out the [live demo](https://boriguen.github.io/here-xyz-thirst-free).
+
 # Features
 1. Accept to share your location to have the app work
 2. Check out the public water fountains colored in cyan
