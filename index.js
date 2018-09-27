@@ -1,4 +1,4 @@
-var YOUR_ACCESS_TOKEN = '8JhorI7kaJtIx0UCEGlbow';
+var YOUR_ACCESS_TOKEN = 'AXoqaCXh6cAqoz0nDxEzUCo';
 var APP_ID = 'xjmyiygJapVIgnffuM6w';
 var APP_CODE = 'ZlMdV3eLHiRll-8HO3MayA';
 var SELECTED_POINT_STYLE = [{
@@ -147,7 +147,7 @@ function kickoff() {
       provider: new here.xyz.maps.providers.SpaceProvider({
         name: 'WaterFountainsProvider',
         level: 6,
-        space: 'xtLImAHZ',
+        space: 'jaz191md',
         credentials: {
           access_token: YOUR_ACCESS_TOKEN
         }
