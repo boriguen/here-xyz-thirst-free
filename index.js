@@ -56,7 +56,7 @@ function kickoff() {
       max: 20,
       provider: new here.xyz.maps.providers.ImageProvider({
         name: 'Live Map',
-        url: 'https://{SUBDOMAIN_INT_1_4}.mapcreator.tilehub.api.here.com/tilehub/wv_livemap_bc/png/terrain/512/{QUADKEY}?access_token=' + YOUR_ACCESS_TOKEN
+        url: 'https://1.aerial.maps.api.here.com/maptile/2.1/maptile/newest/terrain.day/{z}/{x}/{y}/512/png8?ppi=500&app_id=' + APP_ID + '&app_code=' + APP_CODE
       })
     })
   ];
