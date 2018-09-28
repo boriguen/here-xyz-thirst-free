@@ -14,13 +14,13 @@ Check out the [live demo](https://boriguen.github.io/here-xyz-thirst-free).
 # Background on the underlying data
 Used XYZ spaces can be seen via:
 ```
-curl -X GET "https://xyz.api.here.com/hub/spaces" -H "accept: */*" -H "Authorization: Bearer 9w5K6Ym8VwBUu0JaVQeufA"
+curl -X GET "https://xyz.api.here.com/hub/spaces" -H "accept: */*" -H "Authorization: Bearer AXoqaCXh6cAqoz0nDxEzUCo"
 ```
 Here is the response:
 ```
 [
   {
-    "id": "xtLImAHZ",
+    "id": "jaz191md",
     "title": "water_fountains_usa.geojson",
     "description": "Extracted from http://overpass-turbo.eu",
     "shared": true,
@@ -35,4 +35,4 @@ Here is the response:
 ]
 ```
 
-And for more ways to query the data, please have a look the [XYZ Swagger documentation](https://xyz.api.here.com/hub/static/swagger).
+And for more ways to query the data, please have a look the [XYZ Swagger documentation](https://xyz.api.here.com/hub/static/swagger/).
