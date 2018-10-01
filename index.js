@@ -1,4 +1,5 @@
-var YOUR_ACCESS_TOKEN = 'AXoqaCXh6cAqoz0nDxEzUCo';
+var WATER_FOUTAINS_TOKEN = 'AdOXzwNDzDjtwsKMJqKPCwk';
+var THIRST_FREE_TOKEN = 'AfXlXA4vl7AJhyaX014xozc';
 var APP_ID = 'xjmyiygJapVIgnffuM6w';
 var APP_CODE = 'ZlMdV3eLHiRll-8HO3MayA';
 var SELECTED_POINT_STYLE = [{
@@ -147,9 +148,9 @@ function kickoff() {
       provider: new here.xyz.maps.providers.SpaceProvider({
         name: 'WaterFountainsProvider',
         level: 6,
-        space: 'jaz191md',
+        space: 'Tyd31ZuT',
         credentials: {
-          access_token: YOUR_ACCESS_TOKEN
+          access_token: WATER_FOUTAINS_TOKEN
         }
       }),
       style: {
@@ -182,9 +183,9 @@ function kickoff() {
       provider: new here.xyz.maps.providers.SpaceProvider({
         name: 'ThirstFreeProvider',
         level: 6,
-        space: 'ZUTOPvm6',
+        space: 'xHfeCRJP',
         credentials: {
-          access_token: YOUR_ACCESS_TOKEN
+          access_token: THIRST_FREE_TOKEN
         }
       }),
       style: {
@@ -233,19 +234,22 @@ function kickoff() {
   }
 
   function onFeatureClick(event) {
+    var tappedFeature = event.target;
+
     if (currentFountainFeature) {
       waterFountainsLayer.setStyleGroup(currentFountainFeature);
       currentFountainFeature = null;
     }
 
-    if (event.target) {
-      currentFountainFeature = event.target;
+    var currentRouteTapped = tappedFeature && currentRouteFeature != null && tappedFeature.id == currentRouteFeature.id;
+    if (!currentRouteTapped && tappedFeature) {
+      currentFountainFeature = tappedFeature;
       waterFountainsLayer.setStyleGroup(currentFountainFeature, SELECTED_POINT_STYLE);
       console.log('This feature got clicked on: ' + JSON.stringify(currentFountainFeature.properties, undefined, 2));
       infoTag.innerText = "Water fountain located at: " + JSON.stringify(currentFountainFeature.geometry);
       updateRoute();
     } else {
-      if (currentRouteFeature) {
+      if (!currentRouteTapped) {
         thirstFreeLayer.removeFeature(currentRouteFeature);
         currentRouteFeature = null;
       }
