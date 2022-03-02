@@ -1,7 +1,6 @@
 var WATER_FOUTAINS_TOKEN = 'AdOXzwNDzDjtwsKMJqKPCwk';
 var THIRST_FREE_TOKEN = 'AfXlXA4vl7AJhyaX014xozc';
-var APP_ID = 'xjmyiygJapVIgnffuM6w';
-var APP_CODE = 'ZlMdV3eLHiRll-8HO3MayA';
+var API_KEY = 'QJ1nC6G1BEaQhr8sVhla5kd2rXIPRUI1MaLP84bo-og';
 var SELECTED_POINT_STYLE = [{
             zIndex: 3,
             type: "Circle",
@@ -39,8 +38,7 @@ function kickoff() {
 
   var secure = (location.protocol === 'https:') ? true : false;
   var platform = new H.service.Platform({
-    app_code: APP_CODE,
-    app_id: APP_ID,
+    apikey: API_KEY,
     useCIT: true,
     useHTTPS: secure
   });
@@ -57,7 +55,7 @@ function kickoff() {
       max: 20,
       provider: new here.xyz.maps.providers.ImageProvider({
         name: 'Live Map',
-        url: 'https://1.aerial.maps.api.here.com/maptile/2.1/maptile/newest/terrain.day/{z}/{x}/{y}/512/png8?ppi=500&app_id=' + APP_ID + '&app_code=' + APP_CODE
+        url: 'https://1.aerial.maps.api.here.com/maptile/2.1/maptile/newest/terrain.day/{z}/{x}/{y}/512/png8?ppi=500&apikey=' + API_KEY
       })
     })
   ];
