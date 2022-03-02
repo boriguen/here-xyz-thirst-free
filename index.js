@@ -55,7 +55,7 @@ function kickoff() {
       max: 20,
       provider: new here.xyz.maps.providers.ImageProvider({
         name: 'Live Map',
-        url: 'https://1.aerial.maps.api.here.com/maptile/2.1/maptile/newest/terrain.day/{z}/{x}/{y}/512/png8?ppi=500&apikey=' + API_KEY
+        url: `https://1.aerial.maps.ls.hereapi.com/maptile/2.1/maptile/newest/terrain.day/{z}/{x}/{y}/512/png8?apiKey=${API_KEY}`
       })
     })
   ];
